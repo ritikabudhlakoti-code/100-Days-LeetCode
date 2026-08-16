@@ -4,5 +4,9 @@ My 100 Days of LeetCode journey using Java.
 **Problem:** 113 - Path Sum II
 **Topics:** Binary Tree, Recursion, Backtracking
 **Language:** Java
+## Day 2
+**Problem:** 49 - Group Anagrams
+**Topics:** HashMap, Strings, Sorting
+**Language:** Java
 ## Goal
 To improve my DSA problem-solving skills and stay consistent for 100 days.

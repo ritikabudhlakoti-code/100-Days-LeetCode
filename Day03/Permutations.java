@@ -1,0 +1,34 @@
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+
+        List<Integer> ip = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            ip.add(nums[i]);
+        }
+
+        List<Integer> op = new ArrayList<>();
+
+        helper(ip, op, ans);
+        return ans;
+    }
+
+    private void helper(List<Integer> ip, List<Integer> op,
+                        List<List<Integer>> ans) {
+
+        if (ip.size() == 0) {
+            ans.add(new ArrayList<>(op));
+            return;
+        }
+
+        for (int i = 0; i < ip.size(); i++) {
+            op.add(ip.get(i));
+            int value = ip.remove(i);
+
+            helper(ip, op, ans);
+
+            ip.add(i, value);
+            op.remove(op.size() - 1);
+        }
+    }
+}

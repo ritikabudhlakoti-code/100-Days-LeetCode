@@ -26,6 +26,12 @@ My 100 Days of LeetCode journey using Java.
 **Topics:** Recursion, Backtracking  
 **Language:** Java
 
+## Day 5
+
+**Problem:** Minimum Operations to Make a Rotated Palindrome I  
+**Topics:** Strings, Two Pointers
+**Language:** Java
+
 ## Goal
 
 To improve my DSA problem-solving skills and stay consistent for 100 days.

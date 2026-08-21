@@ -32,6 +32,13 @@ My 100 Days of LeetCode journey using Java.
 **Topics:** Strings, Two Pointers
 **Language:** Java
 
+## Day 6
+
+**Problem:** Subset II
+**Topics:** Recursion, Backtracking
+**Language:** Java
+
+
 ## Goal
 
 To improve my DSA problem-solving skills and stay consistent for 100 days.

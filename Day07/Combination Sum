@@ -1,0 +1,24 @@
+class Solution {
+    void fun(int i , int[] candidates, int target , List<Integer>op, List<List<Integer>>ans){
+        if(target<0) return ;
+        if(i>=candidates.length){
+            if(target==0){
+                ans.add(new ArrayList<>(op));
+            }
+            return;
+
+        }
+        op.add(candidates[i]);
+        fun(i,candidates,target-candidates[i],op,ans);
+        op.remove(op.size()-1);
+        fun(i+1,candidates, target,op,ans);
+    }
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<Integer> op = new ArrayList<>();
+        List<List<Integer>> ans = new ArrayList<>();
+        fun(0,candidates,target,op,ans);
+        return ans;
+
+        
+    }
+}

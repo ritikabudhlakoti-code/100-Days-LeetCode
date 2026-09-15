@@ -1,0 +1,19 @@
+class Solution {
+    void fun(String s , int n , int a , int b,List<String>ans){
+        if(b>a) return ;
+       if(a>(n/2)|| b>(n/2)) return;
+
+	  if (s.length()==n){
+        ans.add(s);
+
+	      return;
+    }
+     fun(s+"(",n,a+1,b,ans);
+	  fun(s+")",n,a,b+1,ans);}
+    public List<String> generateParenthesis(int n) {
+        List<String> ans = new ArrayList<>();
+        fun("",2*n,0,0,ans);
+        return ans ;
+        
+    }
+}
